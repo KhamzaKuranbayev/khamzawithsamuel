@@ -1,0 +1,22 @@
+// Complete the beautifulDays function below.
+    static int beautifulDays(int i, int j, int k) {
+        int count = 0;
+        for(int a = i; a <= j; a++){
+            int difference = Math.abs(a - reverseNumber(a));
+            if(difference % k == 0) {
+                count ++;
+            }
+        }
+        return count;
+    }
+
+     private static int reverseNumber(int num) {
+        int reversed = 0;
+
+        for(;num != 0; num /= 10) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+        }
+
+        return reversed;
+    }
