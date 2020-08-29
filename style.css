@@ -1,0 +1,49 @@
+div.header-img {
+  width: 100%;
+  position: fixed;
+}
+
+div.nav-bar {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: #1a1a1a;
+  width: 100%;
+  top: 47px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 50px;
+  float: left;
+}
+
+.title {
+  margin-top: 150px;
+  color: #008fb3;
+  text-align: center;
+}
+
+div.flex-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    width: 100%;
+    margin: auto;
+  }
+
+  .text {
+    width: 400px;
+  }
+}
