@@ -1,0 +1,8 @@
+function extraLongFactorial(n){
+let sum = 1n;
+for(let i = 2n; i <= n; i++){
+    sum *=i;
+    }
+return sum;
+}
+extraLongFactorial(25)
